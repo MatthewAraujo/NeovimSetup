@@ -9,7 +9,10 @@ return require('packer').startup(function(use)
         require('packer').startup(function(use)
                 use({ 'rose-pine/neovim', as = 'rose-pine' })
         end)
-
+    
+        use{
+            "github/copilot.vim"
+        }
 
         use {
                 'nvim-telescope/telescope.nvim', tag = '0.1.4',
